@@ -1,7 +1,7 @@
 # Foundry Template [![Github Actions][gha-badge]][gha] [![Foundry][foundry-badge]][foundry] [![License: MIT][license-badge]][license]
 
-[gha]: https://github.com/paulrberg/foundry-template/actions
-[gha-badge]: https://github.com/paulrberg/foundry-template/actions/workflows/ci.yml/badge.svg
+[gha]: https://github.com/0xble/foundry-template/actions
+[gha-badge]: https://github.com/0xble/foundry-template/actions/workflows/ci.yml/badge.svg
 [foundry]: https://getfoundry.sh/
 [foundry-badge]: https://img.shields.io/badge/Built%20with-Foundry-FFDB1C.svg
 [license]: https://opensource.org/licenses/MIT
@@ -19,18 +19,10 @@ A Foundry-based template for developing Solidity smart contracts, with sensible 
 
 ## Getting Started
 
-Click the [`Use this template`](https://github.com/paulrberg/foundry-template/generate) button at the top of the page to create a new repository with this repo as the initial state.
-
-Or, if you prefer to install the template manually:
-
 ```sh
-forge init my-project --template https://github.com/paulrberg/foundry-template
-cd my-project
-yarn install # install solhint and prettier and other goodies
+yarn install
+forge install
 ```
-
-If this is your first time with Foundry, check out the [installation](https://github.com/foundry-rs/foundry#installation) instructions.
-
 ## Features
 
 This template builds upon the frameworks and libraries mentioned above, so for details about their specific features, please consult their respective documentations.
@@ -153,14 +145,3 @@ $ forge test
 
 1. Foundry piggybacks off [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) to manage dependencies. There's a [guide](https://book.getfoundry.sh/projects/dependencies.html) about how to work with dependencies in the book.
 2. You don't have to create a `.env` file, but filling in the environment variables may be useful when debugging and testing against a mainnet fork.
-
-## Related Efforts
-
-- [abigger87/femplate](https://github.com/abigger87/femplate)
-- [cleanunicorn/ethereum-smartcontract-template](https://github.com/cleanunicorn/ethereum-smartcontract-template)
-- [foundry-rs/forge-template](https://github.com/foundry-rs/forge-template)
-- [FrankieIsLost/forge-template](https://github.com/FrankieIsLost/forge-template)
-
-## License
-
-[MIT](./LICENSE.md) © Paul Razvan Berg

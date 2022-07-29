@@ -2,10 +2,12 @@
   "extends": "solhint:recommended",
   "plugins": ["prettier"],
   "rules": {
-    "code-complexity": ["error", 8],
+    "code-complexity": ["error", 15],
     "compiler-version": ["error", ">=0.8.4"],
     "func-visibility": ["error", { "ignoreConstructors": true }],
     "max-line-length": ["error", 120],
+    "avoid-low-level-calls": "off",
+    "no-inline-assembly": "off",
     "not-rely-on-time": "off",
     "prettier/prettier": [
       "error",
